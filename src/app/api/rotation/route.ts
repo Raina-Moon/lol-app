@@ -1,16 +1,12 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
+  const apiKey = process.env.RIOT_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "API key not found" }, { status: 500 });
+  }
+
   try {
-    const apiKey = process.env.RIOT_API_KEY;
-    if (!apiKey) {
-
-      return NextResponse.json(
-        { error: "API key not found" },
-        { status: 500 }
-      );
-    }
-
     const res = await fetch(
       "https://kr.api.riotgames.com/lol/platform/v3/champion-rotations",
       {
