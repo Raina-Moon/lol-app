@@ -41,7 +41,7 @@ const {
           Weekly Champion Rotation
         </h1>
         <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12">
-          Check out this week's free-to-play champions!
+          Check out this week&apos;s free-to-play champions!
         </p>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <RotationList champions={filteredChampions} />
