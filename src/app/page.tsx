@@ -31,7 +31,7 @@ export default function HomePage() {
 
         <Link href="/rotation">
           <button className="relative bg-gold text-white text-lg font-semibold px-6 py-3 outline outline-1 outline-white outline-offset-4">
-          View This Week's Rotation
+          View This week&apos;s Rotation
           </button>
         </Link>
       </div>
