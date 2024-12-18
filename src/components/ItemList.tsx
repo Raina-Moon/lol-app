@@ -1,5 +1,6 @@
-import { Item } from "@/types/Item";
 import React from "react";
+import { Item } from "@/types/Item";
+import Image from "next/image";
 
 const ItemList = ({ items }: { items: Item[] }) => {
   const stripHtml = (html: string) => html.replace(/<[^>]*>/g, "");
@@ -12,10 +13,12 @@ const ItemList = ({ items }: { items: Item[] }) => {
           className="bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden p-4 transition-transform transform hover:scale-105 hover:shadow-2xl"
         >
           <div className="flex items-center justify-center mb-4">
-            <img
+            <Image
               src={`https://ddragon.leagueoflegends.com/cdn/14.24.1/img/item/${item.id}.png`}
               alt={item.name}
-              style={{ width: "64px", height: "64px" }}
+              width={64}
+              height={64}
+              priority
             />
           </div>
 
