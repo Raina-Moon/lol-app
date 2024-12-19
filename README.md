@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+LOL-App
 
-## Getting Started
+LOL-App은 Riot Games API와 Data Dragon을 활용하여 리그 오브 레전드 챔피언 로테이션 정보와 상세 정보 등을 제공하는 웹 애플리케이션입니다.
 
-First, run the development server:
+LOL-App is a web application that provides information about the weekly free champion rotation and detailed statistics for each champion in the game "League of Legends." This project leverages Riot Games API and Data Dragon to fetch and display real-time data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ Weekly Champion Rotation: View the current free-to-play champions for the week
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Champion Details: Access detailed information about each champion, including stats, abilities, and lore
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+기능 / Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+Frontend: React, Next.js, Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+State Management: React Query (Tanstack Query)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Data Fetching: Riot Games API, Data Dragon
 
-## Deploy on Vercel
+공개 URL / Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+개발한 프로젝트는 Vercel을 통해 공개되었습니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is deployed using Vercel. Access the live application here:
+
+https://lol-1vaz68ogk-raina-moons-projects.vercel.app
+
+프로젝트 구조 / Project Structure
+
+📦lol-app
+ ┣ 📂public
+ ┣ 📂src
+ ┃ ┣ 📂components
+ ┃ ┣ 📂pages
+ ┃ ┣ 📂styles
+ ┃ ┣ 📂utils
+ ┃ ┗ 📂types
+ ┣ .eslintrc.json
+ ┣ .gitignore
+ ┣ next.config.mjs
+ ┣ package.json
+ ┣ README.md
+ ┣ tailwind.config.ts
+ ┗ tsconfig.json
+--------------------------------------------------------------
+ public/: Static assets
+
+src/components/: Reusable React components
+
+src/pages/: Next.js page components
+
+src/styles/: Styling files
+
+src/utils/: Utility functions for data fetching and processing
+
+src/types/: TypeScript type definitions
+
+
