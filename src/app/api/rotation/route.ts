@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const apiKey = process.env.RIOT_API_KEY;
   if (!apiKey) {
+    console.error("API key not found");
+
     return NextResponse.json({ error: "API key not found" }, { status: 500 });
   }
 
